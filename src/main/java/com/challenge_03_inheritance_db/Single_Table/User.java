@@ -5,7 +5,7 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 
 
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //default
 @Entity(name = "ST_User") //name overriding because we are creating all 4 inheritance representations of the same table name
 public class User extends BaseModel {
     private String name;
